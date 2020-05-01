@@ -16,7 +16,6 @@ function draw() {
 	drawPoly(star, mouseX, mouseY, (180 + (sin(millis() / 12) * 180)), color(255,0,0,(128 + sin(millis() / 10) * 128)));
 }
 
-
 function secondStar(numPoints, size, depth, delAngFactor)
 {
 	angleMode(DEGREES);
