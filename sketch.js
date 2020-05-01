@@ -8,7 +8,7 @@ function preload(){
 function setup() {
   var cnv = createCanvas(windowWidth,windowHeight);
   cnv.style('display', 'block');
-  star = secondStar(6, 50, 3, 4);
+  star = getStar(5, 50, 2, 2);
 }
 
 function draw() {
@@ -16,7 +16,7 @@ function draw() {
 	drawPoly(star, mouseX, mouseY, (180 + (sin(millis() / 12) * 180)), color(255,0,0,(128 + sin(millis() / 10) * 128)));
 }
 
-function secondStar(numPoints, size, depth, delAngFactor)
+function getStar(numPoints, size, depth, delAngFactor)
 {
 	angleMode(DEGREES);
 
